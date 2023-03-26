@@ -80,5 +80,3 @@ form.onsubmit = function(e) {
     })
 }
 
-function displayWeather() {
-}
