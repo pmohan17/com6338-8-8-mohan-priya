@@ -81,6 +81,4 @@ form.onsubmit = function(e) {
 }
 
 function displayWeather() {
-    h2.textContent = data.name + ', ' + data.sys.country
-    container.appendChild(h2)
 }
