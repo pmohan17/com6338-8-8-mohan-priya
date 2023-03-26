@@ -3,7 +3,7 @@ var container = document.getElementById('weather')
 var userInput
 var URL = "https://api.openweathermap.org/data/2.5/weather"
 var queryString 
-var fetchURL = URL + queryString
+var fullURL = URL + queryString
 var h2 = document.createElement('h2')
 var form = document.querySelector('form')
 
@@ -15,8 +15,8 @@ form.onsubmit = function(e) {
    if (!userInput) return
     form.search.value = ''
     queryString = "?units=imperial&appid=2ee662fc627b8fa25984463d776a7b7f&q=" + userInput
-    fetchURL = URL + queryString
-    fetch(fetchURL)
+    fullURL = URL + queryString
+    fetch(fullURL)
     .then(function(res) {
         //throw error if location isn't found
         if (res.status !== 200){
